@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Sign-Up</title>
+</head>
+<body>
+    <div class="container">
+        <div class="img"></div>
+        <div class="logo">
+            <img src="pngwing.com.png" alt="logo" class="pic">
+            <h1 class="bojack">Bojack</h1>
+        </div>
+        <div class="right">
+            <div class="info-txt">
+                <p>This is a sign-up page for the calculator (works only for PC)</p>
+            </div>
+            <form class="sign-up" action="https://bojack55.github.io/calculator/" method="get">
+                <div class="input">
+                    <label for="first_name">First Name</label>
+                    <input type="text" id="first_name" placeholder="Moaz..." name="first_name" required>
+                </div>
+                <div class="input">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" id="last_name" placeholder="Abdelaleem" name="last_name">
+                </div>
+                <div class="input">
+                    <label for="user_email">Email Address</label>
+                    <input type="email" id="user_email" placeholder="abc@example.com" name="user_email" required>
+                </div>
+                <div class="input">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="input">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" name="confirm-password" id="confirm-password" required>
+                </div>
+                <div class="input">
+                    <label for="dob">Date Of Birth</label>
+                    <input type="date" id="dob" name="dob">
+                </div>
+                <div class="input">
+                    <label for="phone-number">Phone Number</label>
+                    <input type="text" name="phone-number" id="phone-number" maxlength="9" minlength="9">
+                </div>
+                <div class="input">
+                    <input type="checkbox" id="terms" name="terms" value="terms" required>
+                    <label for="terms">I agree to the Terms, Privacy Policy, and Cookies Policy.</label>
+                </div>
+                <div class="buttons">
+                    <button type="submit" class="submit-btn">Submit</button>
+                    <button type="reset" class="reset-btn">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html> 

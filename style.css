@@ -1,0 +1,158 @@
+:root {
+    --color: rgb(6, 6, 53);
+    --txt: rgb(211, 202, 151);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--txt);
+}
+p{
+    font-size: 2rem;
+    padding: 20px;
+    margin: ;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.img {
+    background-image: url('form-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40vw;
+    position: relative; /* Set relative position to contain the logo */
+}
+
+.logo {
+    position: absolute;
+    top: 10vh;
+    left: 50%;
+    transform: translateX(-220%); /* Center the logo horizontally */
+    background-color: rgba(235, 235, 235, 0.274);
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: rgb(54, 0, 0);
+    font-family: monospace;
+    font-size: 3.1rem;
+    text-align: center;
+}
+
+.pic {
+    height: 20vh;
+    max-width: 100%;
+    object-fit: contain; /* Keep aspect ratio */
+}
+
+.right {
+    width: 60vw;
+    background-color: rgb(75, 102, 50);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding: 2vw;
+}
+
+.form {
+    background-color: rgb(10, 10, 61);
+    box-shadow: 0 10px 15px 2px rgb(22, 22, 22);
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.input {
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    font-size: 1rem;
+    text-transform: uppercase;
+    opacity: 1; /* Set opacity to 1 for better visibility */
+    
+}
+
+input {
+    background-color:  rgb(173, 173, 173);
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0.5rem; /* Added padding for better UX */
+    color:azure
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid var(--color);
+}
+
+button {
+    background-color: transparent;
+    color: var(--color);
+    font-weight: 700;
+    font-size: 1.2rem;
+    border: 2px solid var(--color);
+    padding: 10px 40px;
+    margin: 40px 0;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--color);
+    color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-flow: column;
+        height: auto;
+        text-align: center;
+    }
+    .pic {
+        width: 100vw;
+        height: 15vh;
+        background-size: 100vw;
+    }
+    .logo {
+        width: 100vw;
+        top: 5vh;
+        left: 50%;
+        transform: translateX(-50%);
+        gap: 10px;
+    }
+    .right {
+        width: auto;
+        height: auto;
+    }
+    .form {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .input {
+        width: auto;
+        font-size: 0.9em;
+    }
+    input {
+        font-size: 0.9rem;
+        height: 1.5rem;
+        width: 70vw;
+    }
+    button {
+        width: 60vw;
+        padding: 10px 5px;
+    }
+}
